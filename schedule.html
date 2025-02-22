@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JollyJolly Camp Schedule</title>
+  <!-- External CSS for the navbar -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ========== Schedule Page Specific Styles ========== */
+    
+    /* Desktop/Base Layout */
+    body {
+      display: flex;          /* side nav + main content on larger screens */
+      min-height: 100vh;
+    }
+
+    /* Side Navigation */
+    .side-nav {
+      width: 250px;
+      background: #2c3e50;
+      color: white;
+      padding: 2rem 1rem;
+      position: sticky;
+      top: 60px;                /* keeps the side nav "stuck" below navbar on desktop */
+      height: calc(100vh - 60px);
+    }
+
+    .side-nav h2 {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .side-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .side-nav li {
+      margin: 1rem 0;
+    }
+
+    .side-nav a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 0.5rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    .side-nav a:hover {
+      background: #34495e;
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      padding: 2rem;
+    }
+
+    .class-section {
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: #f5f5f5;
+      border-radius: 8px;
+    }
+
+    .class-section h2 {
+      color: #2c3e50;
+      margin-bottom: 1.5rem;
+    }
+
+    .week-card {
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .week-card h3 {
+      color: #2ecc71;
+      margin-bottom: 1rem;
+    }
+
+    .week-card p {
+      line-height: 1.6;
+      color: #666;
+      margin: 0.5rem 0;
+    }
+
+    /* ========== Mobile Overrides ========== */
+    @media (max-width: 768px) {
+      /* Stack side nav above content */
+      body {
+        flex-direction: column;
+        padding-top: 0 !important;  /* Remove any top padding on mobile */
+      }
+
+      /* Make side-nav non-sticky so it won't block text */
+      .side-nav {
+        position: static;   /* no longer sticky on mobile */
+        top: auto;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        margin-bottom: 1rem; /* spacing below side nav before main content */
+      }
+
+      .side-nav h2 {
+        margin-bottom: 1rem;
+      }
+
+      .main-content {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar Placeholder -->
+  <div id="navbar"></div>
+  
+  <!-- Side Navigation -->
+  <nav class="side-nav">
+    <h2>Camp Schedule</h2>
+    <ul>
+      <li><a href="#watermelon">Watermelon Camp (5-8)</a></li>
+      <li><a href="#lemon">Lemon Camp (9-12)</a></li>
+      <li><a href="#robotics">Robotics VRC Camp (12-14)</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Watermelon Camp Section -->
+    <section id="watermelon" class="class-section">
+      <h2>Watermelon Camp (Ages 5-8)</h2>
+      
+      <!-- Week 1 -->
+      <div class="week-card">
+        <h3>Week 1: June 9 - June 13</h3>
+        <p><strong>Digital Art Odyssey</strong></p>
+        <p>Join us in a 2-week camp to explore digital art and follow a skilled teacher who will share her &gt;12y of experience in the form of simple, easy-to-understand concepts. We will cover important aspects such as anatomy and sketching, as well as fun projects such as animation memes, paper dragon puppets, character design, and more; no matter what the topic is, you'll have something new to bring home almost every day! Additionally, you'll be exposed to new art programs and have plenty of opportunities for practice and improvement. Sign up today to create lasting memories, learn new techniques, and kindle a passion for digital drawing!</p>
+      </div>
+      
+      <!-- Week 2 -->
+      <div class="week-card">
+        <h3>Week 2: June 16 - June 20</h3>
+        <p><strong>Digital Art</strong></p>
+        <p>Continuation of Week 1's Digital Art Odyssey</p>
+      </div>
+      
+      <!-- Week 3 -->
+      <div class="week-card">
+        <h3>Week 3: June 23 - June 27</h3>
+        <p><strong>Fashion Creator</strong></p>
+        <p>Led by an experienced instructor with a passion for fashion and years of involvement in creative design and styling, our Mini Fashion Creators Summer Camp offers children aged 5-8 an exciting journey into the world of fashion. This one-of-a-kind camp is packed with activities to spark creativity, build confidence, and foster a love for design and self-expression.</p>
+        <p>Highlights of the Week: Fashion Design, Runway Modeling, Online Fashion Business Basics, DIY accessories, end-of-week fashion runway show for family and friends.</p>
+      </div>
+      
+      <!-- Week 4 -->
+      <div class="week-card">
+        <h3>Week 4: June 30 - July 3</h3>
+        <p><strong>The Adventure of Birds</strong></p>
+        <p>Take flight on an exciting exploration of the avian world! This nature-focused camp brings children into the heart of birdwatching, with excursions to local parks and nature reserves where they'll identify different species, observe their behaviors, and learn about their vital role in our ecosystem. Through engaging activities and interactive lessons, campers will develop a deep appreciation for wildlife and become young ambassadors for bird conservation and environmental protection.</p>
+      </div>
+      
+      <!-- Week 5 -->
+      <div class="week-card">
+        <h3>Week 5: July 7 - July 11</h3>
+        <p><strong>Discover the World</strong></p>
+        <p>Calling all young explorers! Travel across five continents in just one week through hands-on activities, crafts, games, and cultural experiences. This adventure-filled camp will introduce children to the rich traditions of Egypt, Japan, France, Brazil, and Australia, where they’ll create rainforest animal masks, play traditional games, and even sample authentic cuisine from each country. With interactive storytelling and daily surprises, this camp is the perfect way to inspire curiosity about the world!</p>
+      </div>
+      
+      <!-- Week 6 -->
+      <div class="week-card">
+        <h3>Week 6: July 14 - July 18</h3>
+        <p><strong>The Secret of Water</strong></p>
+        <p>Dive into the mysteries of water in this immersive science and nature camp! From exploring aquatic ecosystems to conducting fun water-based experiments, children will discover how water shapes our planet and supports life. Whether investigating marine creatures, testing water quality, or engaging in splash-filled activities, campers will gain a new appreciation for this essential resource while having an unforgettable summer adventure!</p>
+      </div>
+      
+      <!-- Week 7 -->
+      <div class="week-card">
+        <h3>Week 7: July 21 - July 25</h3>
+        <p><strong>Amazing Light</strong></p>
+        <p>Light up your curiosity in this exciting exploration of optics, color, and shadows! This hands-on camp introduces children to the wonders of light—how it bends, reflects, and creates mesmerizing effects. From making rainbow prisms to experimenting with glow-in-the-dark materials, young scientists will uncover the secrets behind the world of illumination. A perfect mix of science and creativity, this camp will spark a lifelong fascination with the magic of light!</p>
+      </div>
+      
+      <!-- Week 8 -->
+      <div class="week-card">
+        <h3>Week 8: July 28 - August 1</h3>
+        <p><strong>Math in Motion: The Origami Adventure</strong></p>
+        <p>Where math meets art! This unique camp blends creativity and problem-solving through the ancient art of origami. Kids will fold intricate designs, explore geometry through tessellations and patterns, and even build an origami city. As they engage in hands-on challenges, they’ll see how origami connects to engineering, science, and real-world applications. With fun games, teamwork activities, and outdoor play, this camp is the perfect fusion of learning and adventure!</p>
+      </div>
+      
+      <!-- Week 9 -->
+      <div class="week-card">
+        <h3>Week 9: August 4 - August 8</h3>
+        <p><strong>Kitchen Chemistry</strong></p>
+        <p>Mix, measure, and experiment in this deliciously fun science camp! Young chefs and scientists will dive into the chemistry behind cooking—learning about reactions, emulsions, and even edible experiments. From making fizzy drinks to exploring the science of baking, campers will discover how science transforms ingredients into tasty treats. This hands-on camp is perfect for curious minds who love to cook, create, and experiment in the kitchen!</p>
+      </div>
+    </section>
+    
+    <!-- Lemon Camp Section -->
+    <section id="lemon" class="class-section">
+      <h2>Lemon Camp (Ages 9-12)</h2>
+      
+      <!-- Week 1 -->
+      <div class="week-card">
+        <h3>Week 1: June 9 - June 13</h3>
+        <p><strong>Structural Science</strong></p>
+        <p>Unravel the mysteries of life, from tiny cells to towering ecosystems! Campers will explore biology's most fascinating concepts—DNA, photosynthesis, and evolution—through hands-on experiments, interactive games, and creative projects. By building models and solving engaging challenges, they'll discover how science shapes the world around them in a fun and accessible way.</p>
+      </div>
+      
+      <!-- Week 2 & 3 -->
+      <div class="week-card">
+        <h3>Week 2 & 3: June 16 - June 27</h3>
+        <p><strong>AI Camp</strong></p>
+        <p>Step into the future with our AI Camp! This immersive program introduces young learners to artificial intelligence, machine learning, and coding in an exciting and interactive way. Through hands-on projects, students will design their own AI models, explore ethical implications, and understand how AI is shaping the world today. Perfect for curious minds ready to dive into cutting-edge technology!</p>
+      </div>
+      
+      <!-- Week 4 -->
+      <div class="week-card">
+        <h3>Week 4: June 30 - July 3</h3>
+        <p><strong>Magic Theater</strong></p>
+        <p>Lights, camera, magic! This theatrical camp brings storytelling to life through performance, illusion, and drama. Campers will learn acting techniques, stagecraft, and the secrets behind captivating illusions. From scriptwriting to set design, they'll work together to put on a mesmerizing final performance that will leave family and friends spellbound.</p>
+      </div>
+      
+      <!-- Week 5 -->
+      <div class="week-card">
+        <h3>Week 5: July 7 - July 11</h3>
+        <p><strong>Math in Motion: The Origami Adventure (Level 2)</strong></p>
+        <p>Take your origami skills to the next level while diving into fascinating mathematical concepts! Campers will master advanced folding techniques and explore the intersection of origami, geometry, and engineering. Through STEM challenges like designing foldable structures and discovering nature-inspired origami patterns, this camp blends creativity with critical thinking for a hands-on learning experience.</p>
+      </div>
+      
+      <!-- Week 6 -->
+      <div class="week-card">
+        <h3>Week 6: July 14 - July 18</h3>
+        <p><strong>Deep Sea</strong></p>
+        <p>Dive into the depths of the ocean and uncover the secrets of the deep! In this thrilling marine science camp, young explorers will embark on an underwater adventure, discovering bioluminescent creatures, mysterious shipwrecks, and the incredible forces shaping the ocean floor. Campers will conduct hands-on experiments, build deep-sea submersibles, and explore the adaptations that allow marine life to survive in extreme environments. Through interactive activities, creative projects, and exciting discoveries, kids will develop a deeper appreciation for the vast and uncharted world beneath the waves.</p>
+      </div>
+      
+      <!-- Week 7 -->
+      <div class="week-card">
+        <h3>Week 7: July 21 - July 25</h3>
+        <p><strong>World Explorers</strong></p>
+        <p>Pack your bags for a whirlwind global adventure! Each day, campers will explore a different country through hands-on projects, cultural crafts, and interactive games. From constructing the Great Wall of China to painting frescoes like Italian masters, they’ll dive into history, art, and innovation. Plus, they’ll enjoy authentic snacks from each country, making this an immersive and delicious journey across continents!</p>
+      </div>
+      
+      <!-- Week 8 -->
+      <div class="week-card">
+        <h3>Week 8: July 28 - August 1</h3>
+        <p><strong>The Alchemist</strong></p>
+        <p>Through hands-on activities, your child will grow dazzling crystals, paint with light, create stunning cyanotype art, and explore colorful reactions with natural pigments. They'll safely experiment with fire to learn about elements, discover the chemistry of plants with iodine, and unlock the magic of photosynthesis—all in a fun, engaging, and supervised environment. Every day is packed with exciting projects they’ll proudly bring home! Spots are limited, so enroll now to spark a lifelong love of science!</p>
+      </div>
+      
+      <!-- Week 9 -->
+      <div class="week-card">
+        <h3>Week 9: August 4 - August 8</h3>
+        <p><strong>The Journey of Sound</strong></p>
+        <p>Get ready to see, feel, and hear the magic of sound like never before! In this immersive camp, kids will explore the science of sound waves, vibration, and acoustics through exciting hands-on experiments. From building musical instruments and visualizing sound with sand patterns to testing sonic illusions and discovering how animals use echolocation, this camp is a symphony of discovery! Campers will create their own sound-based projects and even experiment with recording and mixing sound effects. Don’t miss this unforgettable journey into the world of sound—register today and let the adventure begin!</p>
+      </div>
+    </section>
+    
+    <!-- Robotics VRC Camp Section -->
+    <section id="robotics" class="class-section">
+      <h2>Robotics VRC Camp (Ages 12-14)</h2>
+      <!-- Content to be added -->
+    </section>
+  </div>
+  
+  <!-- JavaScript: Load Navbar and enable smooth scrolling -->
+  <script>
+    // Load the external navbar HTML into the placeholder
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+        // Attach the hamburger button listener (if present)
+        const hamburger = document.querySelector('.hamburger');
+        if (hamburger) {
+          hamburger.addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+          });
+        }
+      });
+  
+    // Define language switching function for navbar buttons
+    function switchLanguage(lang) {
+      if (lang === 'zh') {
+        window.location.href = 'index-zh.html';
+      } else {
+        window.location.href = 'index.html';
+      }
+    }
+  
+    // Smooth scrolling for side navigation links
+    document.querySelectorAll('.side-nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
