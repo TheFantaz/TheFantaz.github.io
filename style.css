@@ -49,20 +49,7 @@
   .nav-links a:hover {
     color: #2ecc71;
   }
-  
-  .language-switcher {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .language-switcher button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    padding: 0.5rem;
-  }
-  
+
   /* Adjusted to reduce the gap below the fixed navbar */
   body {
     padding-top: 60px;
